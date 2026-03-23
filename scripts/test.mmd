@@ -1,0 +1,22 @@
+  graph LR;
+
+   subgraph SLM [From snipet];
+   N40(SLM)
+   click N40 "https://fitsm.pages.sigma2.no/SLM/"
+   end
+
+   subgraph SRM [SRM]
+   N70(SRM) -.-> N71(Report specifications)
+   N70(SRM) -.-> N72(Reporting requirments)
+   N70(SRM) -.-> N73(List of reports)
+   N70(SRM) -.-> N74(The reports)
+   N40 -->N70
+   click N70 "https://fitsm.pages.sigma2.no/SRM/"
+   click N71 "https://fitsm.pages.sigma2.no/SRM/outputs/report_specifications/index.html"
+   click N72 "https://fitsm.pages.sigma2.no/SRM/outputs/reporting_requirments/index.html"
+   click N73 "https://fitsm.pages.sigma2.no/SRM/outputs/list_of_reports/index.html"
+   click N74 "https://fitsm.pages.sigma2.no/SRM/outputs/reports/index.html"
+   end
+   
+   classDef highlight fill:#d9fffe;
+   class SRM highlight;
