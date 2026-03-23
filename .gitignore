@@ -1,0 +1,6 @@
+build/
+
+# Added for GitHub migration
+.coverage
+.pytest_cache/
+_build/
